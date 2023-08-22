@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Básica</title>
+  </head>
+  <body>
+    <div>
+      <h1>Calculadora Básica</h1>
+
+      <label for="numero1">Número 1:</label>
+      <input type="number" id="numero1" />
+
+      <label for="numero2">Número 2:</label>
+      <input type="number" id="numero2" />
+
+      <label for="operacion">Operación:</label>
+      <select id="operacion">
+        <option value="suma">Suma</option>
+        <option value="resta">Resta</option>
+        <option value="multiplicacion">Multiplicación</option>
+        <option value="division">División</option>
+      </select>
+
+      <button onclick="calculadora()">Calcular</button>
+
+      <h2>Resultado:</h2>
+      <p id="resultado"></p>
+    </div>
+    <br />
+    <div>
+      <h1>Contador de Números Pares e Impares</h1>
+
+      <form id="numeroForm">
+        <label for="inicio">Inicio:</label>
+        <input type="number" id="inicio" required />
+
+        <label for="fin">Fin:</label>
+        <input type="number" id="fin" required />
+
+        <button type="submit">Calcular</button>
+      </form>
+
+      <h2>Resultados:</h2>
+      <p>Números Pares: <span id="pares">0</span></p>
+      <p>Números Impares: <span id="impares">0</span></p>
+    </div>
+    <br />
+
+    <div>
+      <h1>Tabla de Multiplicar</h1>
+
+      <form id="tablaForm">
+        <label for="numero">Número:</label>
+        <input type="number" id="numero" required />
+
+        <label for="limite">Límite:</label>
+        <input type="number" id="limite" required />
+
+        <button type="button" id="mostrarTabla">Mostrar Tabla</button>
+      </form>
+
+      <h2>Tabla de Multiplicar:</h2>
+      <ul id="tablaResultado"></ul>
+    </div>
+    <br />
+
+    <div>
+      <h1>Secuencia de Fibonacci</h1>
+
+      <form id="fibonacciForm">
+        <label for="numero">Números a Generar:</label>
+        <input type="number" id="numero" min="1" required />
+        <button type="button" id="generar">Generar</button>
+      </form>
+
+      <h2>Secuencia de Fibonacci:</h2>
+      <div id="resultado"></div>
+    </div>
+    <br />
+
+    <div>
+      <h1>Convertidor de Temperatura</h1>
+
+      <form id="temperaturaForm">
+        <label for="celsius">Celsius:</label>
+        <input type="number" id="celsius" required />
+        <button type="button" id="convertir">Convertir</button>
+      </form>
+
+      <h2>Resultado:</h2>
+      <p>Fahrenheit: <span id="fahrenheit"></span></p>
+    </div>
+    <br />
+    <div>
+      <h1>Contador de Palabras</h1>
+
+      <form id="wordCountForm">
+        <label for="oracion">Ingrese una Oración:</label>
+        <input type="text" id="oracion" required />
+        <button type="button" id="contarPalabras">Contar Palabras</button>
+      </form>
+
+      <h2>Resultado:</h2>
+      <p>Cantidad de Palabras: <span id="cantidadPalabras">0</span></p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
